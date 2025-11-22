@@ -1,46 +1,206 @@
-/* Reset */
-body {
-  font-family: Arial, sans-serif;
+/* RESET */
+* {
   margin: 0;
   padding: 0;
-  background: #f5f6fa;
-  color: #333;
+  box-sizing: border-box;
 }
 
-/* Navbar at Top */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f2f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
 .navbar {
-  background: #2c3e50;
-  padding: 12px;
+  background: #2d3436;
+  padding: 14px 0;
   text-align: center;
   position: sticky;
   top: 0;
 }
 
 .navbar a {
-  color: white;
-  margin: 0 15px;
+  color: #fff;
+  margin: 0 18px;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .navbar a:hover {
-  color: #f1c40f;
+  color: #fdcb6e;
 }
 
-/* Header content */
+/* HEADER */
 .header {
-  background: #34495e;
+  background: #0984e3;
   color: white;
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .header h1 {
-  margin: 10px 0;
-  font-size: 32px;
+  font-size: 38px;
+  font-weight: 700;
 }
 
 .header p {
-  margin: 5px 0;
   font-size: 18px;
+  opacity: 0.9;
+}
+
+/* PAGE HEADINGS */
+h1 {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 32px;
+  color: #2d3436;
+}
+
+p, li, label {
+  font-size: 18px;
+  padding: 5px 12px;
+}
+
+/* LISTS */
+ul li {
+  background: #ffffff;
+  margin: 12px auto;
+  width: 90%;
+  padding: 14px;
+  border-radius: 8px;
+  border-left: 5px solid #0984e3;
+  list-style: none;
+  max-width: 700px;
+}
+
+/* GALLERY */
+.imgess {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.imgess img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #dfe6e9;
+}
+
+/* FORM */
+form {
+  width: 90%;
+  max-width: 480px;
+  margin: 25px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dfe6e9;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #b2bec3;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background: #0984e3;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #076dc0;
+}
+
+/* TABLE (Schedule Page) */
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #0984e3;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+}
+
+td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #dfe6e9;
+}
+
+tr:nth-child(even) {
+  background: #f1f2f6;
+}
+
+/* CONTACT PAGE STYLING */
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-container h1 {
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Center FAQ section */
+.faq-box {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-box ul {
+  width: 100%;
+  padding: 0;
+}
+
+.faq-box li {
+  width: 100%;
+  margin: 14px 0;
+  text-align: left;
+}
+
+/* Follow section center */
+.follow {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.follow a {
+  color: #0984e3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.follow a:hover {
+  text-decoration: underline;
 }
